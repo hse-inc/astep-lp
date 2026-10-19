@@ -271,7 +271,7 @@
 .page.is-active .cut { scale: 1; opacity: 1; transition-delay: var(--d, 0.2s); }
 .cut__in { display: block; width: 100%; height: auto; animation: fuwa var(--dur-float) ease-in-out var(--d, 0s) infinite; }
 
-.parade { position: relative; flex-shrink: 0; height: 15dvh; margin-inline: calc(var(--gutter) * -1); overflow: hidden; pointer-events: none; }   
+.parade { position: relative; flex-shrink: 0; height: 15dvh; margin-inline: calc(var(--gutter) * -1); overflow: hidden; pointer-events: none;  -webkit-mask-image: var(--fade-x); mask-image: var(--fade-x); }   
 .parade__track { display: flex; align-items: flex-end; gap: 4vw; width: max-content; height: 100%; animation: parade var(--parade-t, 40s) linear infinite; }
 .parade__i { flex-shrink: 0; height: 92%; width: auto; }
 .parade__f { flex-shrink: 0; width: 8dvh; height: 8dvh; margin-bottom: 0.4dvh; }   

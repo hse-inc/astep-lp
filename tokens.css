@@ -29,6 +29,7 @@
   --bg-dark: linear-gradient(170deg, var(--color-blue) 0%, var(--color-blue-2) 100%);
   --bg-accent: linear-gradient(90deg, var(--color-cta) 0%, var(--color-cta-2) 100%);   
   --bg-step: linear-gradient(180deg, var(--color-accent) 0%, var(--color-pale-pink) 100%);   
+  --fade-x: linear-gradient(90deg, transparent 0, #000 12%, #000 88%, transparent 100%);   
   --bg-sky: linear-gradient(180deg, var(--color-pale) 0%, var(--color-base) 100%);
 
   
