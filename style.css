@@ -77,9 +77,10 @@
 .page--value { background: var(--color-pale-pink); }
 .sun { position: absolute; z-index: 0; right: -18%; top: 8%; width: 62%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, var(--color-sun) 0 38%, transparent 70%); }
 .sun svg { position: absolute; left: 34%; top: 36%; width: 32%; height: 32%; color: transparent; }
-.value__row { display: grid; grid-template-columns: minmax(0, 1fr) 42%; align-items: center; gap: 0.9em; }
-.jacket { position: relative; border: var(--line) solid var(--color-ink); background: var(--color-base); }
-.jacket__img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.value__row { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: stretch; gap: 1.1em; }   
+.value__row .ln { white-space: nowrap; }
+.jacket { position: relative; min-height: 0; border: var(--line) solid var(--color-ink); background: var(--color-base); }
+.jacket__img { width: 100%; height: 100%; object-fit: cover; }
 .jacket__burst { position: absolute; right: -0.5em; top: -1.1em; width: 3.1em; height: 3.1em; display: grid; place-items: center; }
 .jacket__burst svg { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--color-yellow); animation: spin 12s linear infinite; }
 .jacket__burst b { position: relative; font-family: var(--font-pop); font-weight: 400; font-size: 1.25em; color: var(--color-accent-2); }
