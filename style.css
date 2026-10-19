@@ -273,6 +273,6 @@
 
 .parade { position: relative; flex-shrink: 0; height: 15dvh; margin-inline: calc(var(--gutter) * -1); overflow: hidden; pointer-events: none; }   
 .parade__track { display: flex; align-items: flex-end; gap: 4vw; width: max-content; height: 100%; animation: parade var(--parade-t, 40s) linear infinite; }
-.parade__i { flex-shrink: 0; height: 100%; width: auto; }
-.parade__f { flex-shrink: 0; width: 9dvh; height: 9dvh; margin-bottom: -2dvh; }
+.parade__i { flex-shrink: 0; height: 92%; width: auto; }
+.parade__f { flex-shrink: 0; width: 8dvh; height: 8dvh; margin-bottom: 0.4dvh; }   
 @keyframes parade { to { translate: -50% 0; } }
