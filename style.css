@@ -76,10 +76,10 @@
 .page--value { background: var(--color-pale-pink); }
 .sun { position: absolute; z-index: 0; right: -18%; top: 8%; width: 62%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, var(--color-sun) 0 38%, transparent 70%); }
 .sun svg { position: absolute; left: 34%; top: 36%; width: 32%; height: 32%; color: transparent; }
-.value__row { display: grid; grid-template-columns: 1fr 44%; align-items: center; gap: 0.9em; }
+.value__row { display: grid; grid-template-columns: minmax(0, 1fr) 42%; align-items: center; gap: 0.9em; }
 .jacket { position: relative; border: var(--line) solid var(--color-ink); background: var(--color-base); }
 .jacket__img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
-.jacket__burst { position: absolute; right: -0.9em; top: -1.1em; width: 3.1em; height: 3.1em; display: grid; place-items: center; }
+.jacket__burst { position: absolute; right: -0.5em; top: -1.1em; width: 3.1em; height: 3.1em; display: grid; place-items: center; }
 .jacket__burst svg { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--color-yellow); animation: spin 12s linear infinite; }
 .jacket__burst b { position: relative; font-family: var(--font-pop); font-weight: 400; font-size: 1.25em; color: var(--color-accent-2); }
 .bubble {
@@ -104,7 +104,7 @@
 .case__txt { padding: 0.45em 0.7em 0.55em; font-weight: var(--fw-body); font-size: max(var(--fs-min), 0.9em); line-height: 1.62; }
 .case__txt .kw { font-weight: 700; color: var(--color-blue-2); }
 .slogan { display: grid; gap: var(--sp-1); }
-.slogan__big { font-family: var(--font-head); font-weight: 900; font-size: 1.1em; line-height: 1.5; color: var(--color-main); }
+.slogan__big { font-family: var(--font-head); font-weight: 900; font-size: 1.02em; line-height: 1.5; letter-spacing: 0; white-space: nowrap; color: var(--color-main); }   
 .slogan__u { background: linear-gradient(var(--color-accent), var(--color-accent)) 0 92% / 0 0.32em no-repeat; transition: background-size 0.9s var(--ease-soft); }
 .slogan.is-on .slogan__u { background-size: 100% 0.32em; transition-delay: 0.35s; }
 
@@ -119,7 +119,7 @@
 .pills__ill { flex: 1; min-width: 0; max-width: 32%; height: auto; aspect-ratio: 1; object-fit: cover; background: var(--color-base); border: var(--line) solid var(--color-ink); border-radius: 0.9em; animation: fuwa var(--dur-float) ease-in-out infinite; }
 
 .page--strong2 { background: linear-gradient(180deg, var(--color-pale-pink) 0%, var(--color-pale) 100%); }
-.eye { display: grid; grid-template-columns: 1fr 44%; align-items: center; gap: 0.9em; }
+.eye { display: grid; grid-template-columns: minmax(0, 1fr) 44%; align-items: center; gap: 0.9em; }
 .eye__fig { position: relative; border: var(--line) solid var(--color-ink); background: var(--color-base); }
 .eye__img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
 .eye__tape { left: -0.9em; top: -0.6em; rotate: -18deg; width: 3.6em; }

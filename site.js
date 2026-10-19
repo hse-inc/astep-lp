@@ -3,6 +3,8 @@
  * 2. 募集要項：職種のタブ（①児童指導員／②保育士）で「職種」の行を切り替える（シート F12「職種別にタブ分け」）
  * 3. 英字の大見出し（飾り）を1文字ずつに分け、弾んで順に出す（参考の見出しの出方）
  * 4. キャラクターの列（.parade__track）：中身を複製して継ぎ目なく流す。秒数は「半分の長さ ÷ 30px/秒」
+ * 5. 端のイラスト・小物（.cut・.bd）が見切れないように、ページの中（ヘッダーの下〜画面の下・左右）に収める（りょうさん 10/19）
+ *    揺れる量（--float-y）より広く余白をとる。昇る気球（.bd--rise）と流れる列は動きそのものなので対象外
  */
 (() => {
   const place = document.querySelector('.place');
@@ -54,4 +56,22 @@
     Promise.all([...track.querySelectorAll('img')].map((im) => (im.decode ? im.decode().catch(() => {}) : null))).then(fit);
     window.addEventListener('resize', fit);
   });
+
+  const header = document.querySelector('.site-header');
+  const fitDeco = () => {
+    const top0 = (header ? header.offsetHeight : 56) + 12;
+    document.querySelectorAll('.bgd .cut, .bgd .bd:not(.bd--rise)').forEach((el) => {
+      const page = el.closest('.page');
+      const pw = page.clientWidth, ph = page.clientHeight;
+      const cs = getComputedStyle(el);
+      const x = parseFloat(cs.getPropertyValue('--x')) / 100 * pw;
+      const y = parseFloat(cs.getPropertyValue('--y')) / 100 * ph;
+      const w = el.offsetWidth, h = el.offsetHeight, m = 12;
+      el.style.left = `${Math.round(Math.min(Math.max(x, m), pw - w - m))}px`;
+      el.style.top = `${Math.round(Math.min(Math.max(y, top0), ph - h - m))}px`;
+    });
+  };
+  Promise.all([...document.querySelectorAll('.bgd img')].map((im) => (im.decode ? im.decode().catch(() => {}) : null))).then(fitDeco);
+  let ft = 0;
+  window.addEventListener('resize', () => { clearTimeout(ft); ft = setTimeout(fitDeco, 200); });
 })();
