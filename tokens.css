@@ -1,0 +1,79 @@
+:root {
+  
+  --color-ink: #24324a;          
+  --color-main: #24324a;         
+  --color-main-2: #3d8fcf;       
+  --color-accent: #ff9aaa;       
+  --color-accent-2: #ff8197;     
+  --color-cta: #f06b84;          
+  --color-cta-2: #e2546f;
+  --color-blue: #5daae4;         
+  --color-blue-2: #3d8fcf;       
+  --color-yellow: #ffe680;       
+  --color-base: #fcfcfc;         
+  --color-pale: #eaf4fc;         
+  --color-pale-pink: #fff0f2;    
+  --color-line: #c7d6e4;         
+  --color-on-dark: #ffffff;
+  --color-on-dark-line: rgb(255 255 255 / 0.75);
+  --color-error: #e2566e;        
+  --color-shadow: rgb(36 50 74 / 0.16);
+  --color-dot-blue: rgb(93 170 228 / 0.16);   
+  --color-dot-pink: rgb(255 154 170 / 0.18);
+  --color-tape-dot: rgb(255 255 255 / 0.7);
+  --color-sun: rgb(255 154 170 / 0.55);       
+  --color-sun-blue: rgb(93 170 228 / 0.45);
+  --color-sun-white: rgb(255 255 255 / 0.5);
+
+  
+  --bg-dark: linear-gradient(170deg, var(--color-blue) 0%, var(--color-blue-2) 100%);
+  --bg-accent: linear-gradient(90deg, var(--color-cta) 0%, var(--color-cta-2) 100%);   
+  --bg-step: linear-gradient(180deg, var(--color-accent) 0%, var(--color-pale-pink) 100%);   
+  --bg-sky: linear-gradient(180deg, var(--color-pale) 0%, var(--color-base) 100%);
+
+  
+  --font-body: "Zen Kaku Gothic New", "Hiragino Sans", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+  --font-head: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Zen Kaku Gothic New", sans-serif;
+  --font-en: "Roboto", "Zen Kaku Gothic New", sans-serif;
+  --font-pop: "Mochiy Pop One", "Zen Maru Gothic", sans-serif;   
+  --fs-min: 13px;
+  --fs-base: clamp(var(--fs-min), min(2.2dvh, 3.75vw), 14.6px);
+  --fs-ui: max(var(--fs-min), 13px);
+  --fs-input: 16px;
+  --fw-body: 500;
+  --ls-body: 0.06em;
+  --lh-body: 1.8;
+  --lh-head: 1.42;
+  --fs-head: 1.42em;             
+  --ls-head: 0.04em;
+  --fs-big-en: 2.55em;           
+  --fs-sub-pop: 1.02em;          
+
+  
+  --col: 480px;
+  --header-h: 56px;
+  --gutter: 22px;
+  --sp-1: 0.4em;                 
+  --sp-p: 0.8em;                 
+  --sp-g: 1.15em;                
+  --pad-y: 1.2em;
+  --next-h: 0px;
+  --radius-pill: 999px;
+  --radius-s: 6px;
+  --line: 1.5px;                 
+  --shadow-soft: 0 0 10px 0 var(--color-shadow);
+  --shadow-column: 0 0 24px 0 var(--color-shadow);
+
+  
+  --ease-out: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-soft: cubic-bezier(0.25, 1, 0.5, 1);
+  --rise: 22px;
+  --dur-in: 650ms;
+  --dur-hover: 300ms;
+  --dur-bg: 1.2s;                
+  --dur-open: 1.6s;              
+  --float-y: 6px;                
+  --float-rot: 1.5deg;
+  --dur-float: 3.6s;
+}
+@media (max-height: 600px) { :root { --pad-y: 0.7em; --sp-g: 0.9em; --sp-p: 0.6em; } }
