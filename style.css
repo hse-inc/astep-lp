@@ -180,7 +180,7 @@
 
 .page--company { background: linear-gradient(180deg, var(--color-blue) 0%, var(--color-pale) 62%, var(--color-base) 100%); }
 .co { display: grid; padding: 0.4em 1.1em; background: var(--color-base); border: var(--line) solid var(--color-ink); border-radius: var(--radius-s); }
-.co__row { display: grid; grid-template-columns: auto 1fr; gap: 0.8em; padding: 0.7em 0; border-bottom: 1px dashed var(--color-line); }
+.co__row { display: grid; grid-template-columns: 6.2em 1fr; gap: 0.8em; padding: 0.7em 0; border-bottom: 1px dashed var(--color-line); }
 .co__row:last-child { border-bottom: 0; }
 .co dt { display: flex; align-items: baseline; gap: 0.4em; font-weight: 700; white-space: nowrap; color: var(--color-blue-2); }
 .co dt::before { content: ""; flex-shrink: 0; width: 0.55em; height: 0.55em; border: var(--line) solid var(--color-ink); border-radius: 50%; background: var(--color-accent); }
