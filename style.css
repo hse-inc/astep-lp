@@ -76,7 +76,6 @@
 
 .page--value { background: var(--color-pale-pink); }
 .sun { position: absolute; z-index: 0; right: -18%; top: 8%; width: 62%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, var(--color-sun) 0 38%, transparent 70%); }
-.sun svg { position: absolute; left: 34%; top: 36%; width: 32%; height: 32%; color: transparent; }
 .value__row { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: stretch; gap: 1.1em; }   
 .value__row .ln { white-space: nowrap; }
 .jacket { position: relative; min-height: 0; border: var(--line) solid var(--color-ink); background: var(--color-base); }
